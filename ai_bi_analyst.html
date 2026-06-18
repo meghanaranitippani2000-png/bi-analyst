@@ -457,7 +457,7 @@ Return this exact JSON structure:
   try{
     const GEMINI_KEY=document.getElementById('api-key-input').value.trim();
     if(!GEMINI_KEY){alert('Please enter your Gemini API key first.');btn.disabled=false;btn.innerHTML='<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg> Generate Business Intelligence Report';show('loading',false);return;}
-    const apiUrl=`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_KEY}`;
+    const apiUrl=`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_KEY}`;
     const res=await fetch(apiUrl,{
       method:'POST',
       headers:{'Content-Type':'application/json'},
